@@ -15,19 +15,22 @@ class Dec2Hex
         String hexadecimal="";
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
 
+            try {
         while(num != 0)
         {
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
 
-	if (num < 0) {
-		System.out.println("Not a valid input");
-		}
-        }
-
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-	System.out.println("Program ended");
+        System.out.println("Program ended");
+    }
+
+    } catch (Exception e) {
+        System.out.println("Something went wrong.");
+    }
+
+       
     }
 }
 
