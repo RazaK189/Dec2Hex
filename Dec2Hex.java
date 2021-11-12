@@ -26,7 +26,7 @@ class Dec2Hex
         System.out.println("Program ended");
     }
 
-    } catch (Exception e) {
+    } catch (ArrayIndexOutOfBoundsException e) {
         System.out.println("Something went wrong.");
     }
 
