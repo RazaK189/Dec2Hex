@@ -26,7 +26,8 @@ class Dec2Hex
 
     }catch (Exception e) {
         System.out.println("Please enter a valid input");
-    }
-    }
+    } System.out.println ("test");
+    } 
+
 }
 
