@@ -16,7 +16,7 @@ class Dec2Hex
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
 
      try {
-        if (args.lenght == 0 ) {
+        if (args.length == 0 ) {
             throw new ArrayIndexOutOfBoundsException();
         }      
         while(num != 0)
