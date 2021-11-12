@@ -20,6 +20,10 @@ class Dec2Hex
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
+
+	if (num < 0) {
+		System.out.println("Not a valid input")
+		}
         }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
