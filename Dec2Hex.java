@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 class Dec2Hex
@@ -14,51 +13,35 @@ class Dec2Hex
         num = Arg1;
         String hexadecimal="";
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
-      
+
         while(num != 0)
         {
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
+        }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-        System.out.println("Program ended");
+
+        if(args.length == 0)
+        {
+            System.out.println("Proper Usage is: java program filename");
+            System.exit(0);
+        }
     }
 
 
-       
-
-
-    }
-
- public static int userInputValidation() {
-
-        Scanner scan = new Scanner(System.in);
-
-        boolean x;
-        int userInput = 0;
-       
-
-        do {
-            x = true;
-            if (scan.hasNextInt()) {
-                userInput = scan.nextInt();
-                scan.nextLine();
-
-                if (userInput < 0) {
-                    System.out.println("Enter valid input");
-                    x = false;
-                }
-
-            } 
-            
-            else {
-                System.out.println("Enter valid inpu");
-                x = false;
-                scan.next();
-            }
-        } while (!x);
-        return userInput;
-    }
 }
+
+
+
+
+
+  
+      
+
+        
+          
+
+    
 
