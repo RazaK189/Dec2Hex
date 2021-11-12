@@ -22,7 +22,7 @@ class Dec2Hex
             num= num/16;
 
 	if (num < 0) {
-		System.out.println("Not a valid input")
+		System.out.println("Not a valid input");
 		}
         }
 
