@@ -6,47 +6,30 @@ class Dec2Hex
     public static int Arg1;
 
     public static void main(String args[])
-    { 
-        cd(args);
-    }
-
-    public static String cd(String args[]) {
-       try {
-           if(args.length == 0) {
-               throw new ArrayIndexOutOfBoundsException("Error");
-           }
-       
-
+    {
         Arg1 = Integer.parseInt(args[0]);
         char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
         int rem, num;
         num = Arg1;
         String hexadecimal="";
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
-
+try { 
         while(num != 0)
         {
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
+switch (num) {
+     if (num <0) {
+         System.out.println("please enter valid input");
+     }
+     
+}
+
         }
 
         System.out.println("Hexadecimal representation is: " + hexadecimal);
-        return hexadecimal;
-    } catch(ArrayIndexOutOfBoundsException e) {
-        System.out.println(e.getMessage());
-        return e.getMessage();
+	System.out.println("Program ended");
     }
-
-    catch (NumberFormatException e) {
-        String output = "error enter int";
-        System.out.println(output);
-        return output;
-    }
-     
-    }
-
-
-
 }
 
