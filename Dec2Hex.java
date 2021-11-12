@@ -13,23 +13,20 @@ class Dec2Hex
         num = Arg1;
         String hexadecimal="";
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
-try { 
+
+        try {
         while(num != 0)
         {
             rem=num%16;
             hexadecimal= ch[rem] + hexadecimal;
             num= num/16;
-switch (num) {
-     if (num <0) {
-         System.out.println("please enter valid input");
-     }
-     
-}
-
+            System.out.println("Hexadecimal representation is: " + hexadecimal);
+            System.out.println("Program ended");
         }
 
-        System.out.println("Hexadecimal representation is: " + hexadecimal);
-	System.out.println("Program ended");
+    }catch (Exception e) {
+        System.out.println("Please enter a valid input");
+    }
     }
 }
 
